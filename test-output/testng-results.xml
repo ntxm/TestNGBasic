@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11011" started-at="2020-01-12T01:05:33 EST" finished-at="2020-01-12T01:05:44 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11011" started-at="2020-01-12T01:05:33 EST" finished-at="2020-01-12T01:05:44 EST">
+      <class name="com.class1.HW1">
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:com.class1.HW1@1f28c152]" name="navigateTo" is-config="true" duration-ms="3879" started-at="2020-01-12T01:05:33 EST" finished-at="2020-01-12T01:05:37 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateTo -->
+        <test-method status="PASS" signature="verifyLoginAndLogo()[pri:0, instance:com.class1.HW1@1f28c152]" name="verifyLoginAndLogo" duration-ms="3930" started-at="2020-01-12T01:05:37 EST" finished-at="2020-01-12T01:05:41 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAndLogo -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.class1.HW1@1f28c152]" name="close" is-config="true" duration-ms="79" started-at="2020-01-12T01:05:41 EST" finished-at="2020-01-12T01:05:41 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="navigateTo()[pri:0, instance:com.class1.HW1@1f28c152]" name="navigateTo" is-config="true" duration-ms="2783" started-at="2020-01-12T01:05:41 EST" finished-at="2020-01-12T01:05:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateTo -->
+        <test-method status="PASS" signature="verifyLoginAndMsg()[pri:0, instance:com.class1.HW1@1f28c152]" name="verifyLoginAndMsg" duration-ms="230" started-at="2020-01-12T01:05:44 EST" finished-at="2020-01-12T01:05:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAndMsg -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.class1.HW1@1f28c152]" name="close" is-config="true" duration-ms="77" started-at="2020-01-12T01:05:44 EST" finished-at="2020-01-12T01:05:44 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.class1.HW1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
