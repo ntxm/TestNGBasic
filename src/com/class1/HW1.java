@@ -5,24 +5,24 @@ import org.testng.annotations.*;
 
 /*
  * using TestNG annotations automate following test cases
-	TC 1: HRMS Application Login: 
-	Open chrome browser
-	Go to “http://166.62.36.207/humanresources/symfony/web/index.php/auth/login”
-	Enter valid username and password
-	Click on login button
-	Then verify Syntax Logo is displayed
-	Close the browser
-	
-	--------------
-	
-	TC 2: HRMS Application Negative Login: 
-
-	Open chrome browser
-	Go to “http://166.62.36.207/humanresources/symfony/web/index.php/auth/login”
-	Enter valid username
-	Leave password field empty
-	Verify error message with text “Password cannot be empty” is displayed.
-
+ *	TC 1: HRMS Application Login: 
+ *	Open chrome browser
+ *	Go to “http://166.62.36.207/humanresources/symfony/web/index.php/auth/login”
+ *	Enter valid username and password
+ *	Click on login button
+ *	Then verify Syntax Logo is displayed
+ *	Close the browser
+ *	
+ *	--------------
+ * 	
+ *	TC 2: HRMS Application Negative Login: 
+ *
+ *	Open chrome browser
+ *	Go to “http://166.62.36.207/humanresources/symfony/web/index.php/auth/login”
+ *	Enter valid username
+ *	Leave password field empty
+ *	Verify error message with text “Password cannot be empty” is displayed.
+ *
  */
 import com.utils.CommonMethods;
 import com.utils.Constants;
