@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="com.class2.AssertionsDemo"/>
-      <class name="com.class2.SortAssertDemo"/>
-      <class name="com.class1.TitleLogoLoginVerification"/>
-    </classes>
+<suite name="Smoke Suite">
+  <test name="Smoke Test">
+    <groups>
+	    <run>
+	    	<include name = "smoke"/>
+	    </run>	
+    </groups>
+   
+    <packages>
+    	<package name = "com.class1" />
+    	<package name = "com.class2" />
+      	<package name = "com.class3" />
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
