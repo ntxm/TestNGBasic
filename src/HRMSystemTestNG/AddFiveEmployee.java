@@ -2,11 +2,13 @@ package HRMSystemTestNG;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -44,15 +46,23 @@ public class AddFiveEmployee extends CommonMethods {
 	public void navigate() throws InterruptedException {
 		//Navigate to the "Add Employee" Page
 		driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElement(By.linkText("Add Employee")).click();
+		Thread.sleep(1000);
 	}
 		
 	
 	@Test(dataProvider ="dataForAccount", enabled = true, groups = "Employee")
 	public void addEmployee(String firstName, String lastName, String username, String password) throws InterruptedException {
 		//Checkbox "Create login details"
-		driver.findElement(By.xpath("//input[@id='chkLogin']")).click();
+		WebElement chkBox = driver.findElement(By.id("chkLogin"));
+		//Check checkbox condition
+		boolean isCheckboxSelected = chkBox.isSelected();
+		if(!isCheckboxSelected) {
+			chkBox.click();
+		}else {
+			System.out.println("Checkbox already selected");
+		}
 		//add information
 		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys(firstName);
 		driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys(lastName);
@@ -83,7 +93,7 @@ public class AddFiveEmployee extends CommonMethods {
 				{"Garry", "Thomson1010", "GarryThomson", "TestUser002#Run22!"},
 				{"Margharett", "Silvino1010", "MargharettSilvino", "TestUser003#Run23!"},
 				{"Dan", "Markeloff1010", "DanMarkeloff", "TestUser004Run24!#"},
-				{"Katty", "Simpson1010", "KattySimpson", "TestUser005Run25!#"}
+				{"Ann", "Simpson1010", "AnnSimpson", "TestUser005Run25!#"},
 		};
 		
 		return loginCredentials;
@@ -92,11 +102,16 @@ public class AddFiveEmployee extends CommonMethods {
 	@AfterMethod
 	public void screenshot() {
 		//generate random name for screenshot name
-		int scrName = (int) Math.random();
+		Random random = new Random();
+		 int randomInteger = 0;
+		 for(int i =0; i<5; i++){
+		      randomInteger = random.nextInt();
+		 }
+
 		TakesScreenshot screen = (TakesScreenshot)driver;
 		File screenshot = screen.getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(screenshot, new File("screenshots/HRMS/AddEmp" +scrName +".png"));
+			FileUtils.copyFile(screenshot, new File("screenshots/HRMS/AddEmp" +randomInteger +".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
