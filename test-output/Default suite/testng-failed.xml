@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HRMSystemTestNG.Dashboard">
+      <class name="HRMSystemTestNG.AddEmployee">
         <methods>
-          <include name="login"/>
-          <include name="quickLaunch"/>
+          <include name="navigate"/>
           <include name="tearDown"/>
+          <include name="addEmployee" invocation-numbers="4"/>
+          <include name="screenshot"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- HRMSystemTestNG.Dashboard -->
+      </class> <!-- HRMSystemTestNG.AddEmployee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

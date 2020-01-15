@@ -104,8 +104,33 @@ public class Dashboard extends CommonMethods {
 		softAssert.assertAll();
 		
 	}
+	//-----------------------------------------------
 	
-	@Test(priority = 3, enabled = true, groups ="Dashboard")
+	@Test(priority = 3, enabled = false, groups ="Dashboard", dataProvider = "getData")
+	public void navigationLinks(String expectedTitle) throws InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		List<WebElement> icons = driver.findElements(By.xpath("//table[@class='quickLaungeContainer']/tbody/tr/td//div[@class='quickLaunge']/a/span"));
+		
+		for(int i = 0; i < icons.size(); i++) {
+			icons.get(i).click();
+			Thread.sleep(2000);
+			String actualTitle = driver.findElement(By.xpath("//div[@class='head']/h1")).getText();
+			System.out.println(actualTitle);
+			softAssert.assertEquals(actualTitle, expectedTitle, "ERROR: Title does not match");
+			driver.navigate().back();
+		}
+		
+		softAssert.assertAll();
+	}
+	
+	@DataProvider
+	public Object[] getData() {
+		Object[] titles = {"Assign Leave", "Leave List", "Timesheets"};
+		return titles;
+	}
+	//-------------------------------------------------------------------
+	
+	@Test(priority = 4, enabled = true, groups ="Dashboard")
 	public void employeeDistribution() {
 		boolean isBlockDisplayed = driver.findElement(By.id("panel_resizable_1_0")).isDisplayed();
 		
