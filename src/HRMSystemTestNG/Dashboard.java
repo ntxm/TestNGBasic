@@ -2,18 +2,15 @@ package HRMSystemTestNG;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
-
 import com.utils.CommonMethods;
 import com.utils.Constants;
 
-public class AdminPage extends CommonMethods {
+public class Dashboard extends CommonMethods {
 	
 	@BeforeClass
 	public void login() {
@@ -27,21 +24,22 @@ public class AdminPage extends CommonMethods {
 	}
 	
 	@AfterClass
-	public void close() {
+	public void tearDown() {
 		driver.quit();
 	}
 	
 	
-	@Test (priority = 1, enabled = true)
+	@Test (priority = 1, enabled = true, groups = "Dashboard")
 	//Title
 	public void dashboard() {
 		SoftAssert softAssert = new SoftAssert();
 		String expectedTitle = "Dashboard";
 		String actualTitle = driver.findElement(By.xpath("//div[@class='head']/h1")).getText();
 		softAssert.assertEquals(actualTitle, expectedTitle, "ERROR: Title is not matched");
+		softAssert.assertAll();
 	}
 	
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups ="Dashboard")
 	//Quick Launch
 	public void quickLaunch() {
 		//block displayed
@@ -72,8 +70,8 @@ public class AdminPage extends CommonMethods {
 			
 		}
 		
-		
 		softAssert.assertAll();
+		
 	}
 	
 	
