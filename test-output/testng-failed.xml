@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.class3.DataProviderDemo">
+      <class name="HRMSystemTestNG.Dashboard">
         <methods>
+          <include name="login"/>
+          <include name="quickLaunch"/>
           <include name="tearDown"/>
-          <include name="openBrowser"/>
-          <include name="verifyLogin" invocation-numbers="2"/>
         </methods>
-      </class> <!-- com.class3.DataProviderDemo -->
+      </class> <!-- HRMSystemTestNG.Dashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
