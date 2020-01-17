@@ -208,13 +208,18 @@ public class CommonMethods {
 			js.executeScript("window.scrollBy(0,-" + pixel + ")");
 		}
 		
+		/**
+		 * This method will take a screenshot
+		 * @param fileName
+		 */
+		
 		public static void takeScreenshot(String fileName) {
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			File file = ts.getScreenshotAs(OutputType.FILE);
 			try {
-				FileUtils.copyFile(file, new File("/Users/natalia/eclipse-workspace/TestNGBasic/screenshots/"+fileName+".png"));
+				FileUtils.copyFile(file, new File("screenshots/"+fileName+".png"));
 			} catch (IOException e) {
-				e.printStackTrace();
+				System.out.println("Cannot take a screenshot");
 			}
 		}
 		

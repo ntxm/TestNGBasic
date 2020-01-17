@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48" started-at="2020-01-16T21:29:44 EST" finished-at="2020-01-16T21:29:45 EST">
+  <suite name="Default suite" duration-ms="48" started-at="2020-01-17T01:49:22 EST" finished-at="2020-01-17T01:49:22 EST">
     <groups>
       <group name="regression">
-        <method signature="ListenersDemo.test1()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test1" class="com.class4.ListenersDemo"/>
         <method signature="ListenersDemo.test2()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test2" class="com.class4.ListenersDemo"/>
         <method signature="ListenersDemo.test3()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test3" class="com.class4.ListenersDemo"/>
       </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="48" started-at="2020-01-16T21:29:44 EST" finished-at="2020-01-16T21:29:45 EST">
+    <test name="Default test" duration-ms="48" started-at="2020-01-17T01:49:22 EST" finished-at="2020-01-17T01:49:22 EST">
       <class name="com.class4.ListenersDemo">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test1" duration-ms="12" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test2" duration-ms="1" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test2" duration-ms="11" started-at="2020-01-17T01:49:22 EST" finished-at="2020-01-17T01:49:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test3" duration-ms="1" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test3" duration-ms="3" started-at="2020-01-17T01:49:22 EST" finished-at="2020-01-17T01:49:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class ListenersDemo {
 
-	@Test(groups="regression")
+	//@Test(groups="regression")
 	public void test1() {
 		System.out.println("I am test 1");
 		Assert.assertTrue(true);
