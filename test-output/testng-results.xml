@@ -1,194 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90762" started-at="2020-01-15T15:55:47 EST" finished-at="2020-01-15T15:57:18 EST">
+  <suite name="Default suite" duration-ms="48" started-at="2020-01-16T21:29:44 EST" finished-at="2020-01-16T21:29:45 EST">
     <groups>
-      <group name="Employee">
-        <method signature="AddFiveEmployee.addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" class="HRMSystemTestNG.AddFiveEmployee"/>
-      </group> <!-- Employee -->
+      <group name="regression">
+        <method signature="ListenersDemo.test1()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test1" class="com.class4.ListenersDemo"/>
+        <method signature="ListenersDemo.test2()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test2" class="com.class4.ListenersDemo"/>
+        <method signature="ListenersDemo.test3()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test3" class="com.class4.ListenersDemo"/>
+      </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="90762" started-at="2020-01-15T15:55:47 EST" finished-at="2020-01-15T15:57:18 EST">
-      <class name="HRMSystemTestNG.AddFiveEmployee">
-        <test-method status="PASS" signature="login()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="login" is-config="true" duration-ms="5675" started-at="2020-01-15T15:55:47 EST" finished-at="2020-01-15T15:55:53 EST">
+    <test name="Default test" duration-ms="48" started-at="2020-01-16T21:29:44 EST" finished-at="2020-01-16T21:29:45 EST">
+      <class name="com.class4.ListenersDemo">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test1" duration-ms="12" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="navigate()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="navigate" is-config="true" duration-ms="2771" started-at="2020-01-15T15:55:53 EST" finished-at="2020-01-15T15:55:56 EST">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test2" duration-ms="1" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" duration-ms="12749" started-at="2020-01-15T15:55:56 EST" data-provider="dataForAccount" finished-at="2020-01-15T15:56:09 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Olivia]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Berkman1010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[OliviaBerkman]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TestUser001#Run21!]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.class4.ListenersDemo@56235b8e]" name="test3" duration-ms="1" started-at="2020-01-16T21:29:45 EST" finished-at="2020-01-16T21:29:45 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="screenshot" is-config="true" duration-ms="664" started-at="2020-01-15T15:56:09 EST" finished-at="2020-01-15T15:56:09 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="navigate()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="navigate" is-config="true" duration-ms="4871" started-at="2020-01-15T15:56:09 EST" finished-at="2020-01-15T15:56:14 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" duration-ms="14573" started-at="2020-01-15T15:56:14 EST" data-provider="dataForAccount" finished-at="2020-01-15T15:56:29 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Garry]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Thomson1010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[GarryThomson]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TestUser002#Run22!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="screenshot" is-config="true" duration-ms="604" started-at="2020-01-15T15:56:29 EST" finished-at="2020-01-15T15:56:29 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="navigate()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="navigate" is-config="true" duration-ms="4131" started-at="2020-01-15T15:56:29 EST" finished-at="2020-01-15T15:56:34 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" duration-ms="11593" started-at="2020-01-15T15:56:34 EST" data-provider="dataForAccount" finished-at="2020-01-15T15:56:45 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Margharett]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Silvino1010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[MargharettSilvino]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TestUser003#Run23!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="screenshot" is-config="true" duration-ms="655" started-at="2020-01-15T15:56:45 EST" finished-at="2020-01-15T15:56:46 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="navigate()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="navigate" is-config="true" duration-ms="4201" started-at="2020-01-15T15:56:46 EST" finished-at="2020-01-15T15:56:50 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" duration-ms="11629" started-at="2020-01-15T15:56:50 EST" data-provider="dataForAccount" finished-at="2020-01-15T15:57:02 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Markeloff1010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[DanMarkeloff]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TestUser004Run24!#]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="screenshot" is-config="true" duration-ms="590" started-at="2020-01-15T15:57:02 EST" finished-at="2020-01-15T15:57:02 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="navigate()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="navigate" is-config="true" duration-ms="3766" started-at="2020-01-15T15:57:02 EST" finished-at="2020-01-15T15:57:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="addEmployee" duration-ms="11564" started-at="2020-01-15T15:57:06 EST" data-provider="dataForAccount" finished-at="2020-01-15T15:57:18 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ann]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Simpson1010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AnnSimpson]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[TestUser005Run25!#]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="screenshot" is-config="true" duration-ms="585" started-at="2020-01-15T15:57:18 EST" finished-at="2020-01-15T15:57:18 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:HRMSystemTestNG.AddFiveEmployee@6325a3ee]" name="tearDown" is-config="true" duration-ms="99" started-at="2020-01-15T15:57:18 EST" finished-at="2020-01-15T15:57:18 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- HRMSystemTestNG.AddFiveEmployee -->
+        </test-method> <!-- test3 -->
+      </class> <!-- com.class4.ListenersDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
